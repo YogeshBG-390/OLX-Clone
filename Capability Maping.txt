@@ -1,0 +1,19 @@
+const team = {
+    "Shravan H R": "Full Stack Developer",
+    "Chirag R Gowda": "UI/UX Designer",
+    "Yadunandan K": "Frontend Developer",
+    "Yogeshwar R": "Web Developer",
+    "Thejesh": "Front-End Developer",
+    "Yogesh": "Developer and Scrum Master"
+};
+
+function displayTeamDetails(team) {
+    console.log("Team Members and Their Roles:");
+    console.log("--------------------------------");
+
+    for (const name in team) {
+        console.log(`${name}: ${team[name]}`);
+    }
+}
+
+displayTeamDetails(team);
